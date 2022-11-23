@@ -39,7 +39,7 @@ function MyBookForm(){
          .catch((err)=> console.log(err))      
         };
         if(goToBook){
-          navigate("/MyBook")
+          navigate("/")
         }
 
 return(

@@ -46,7 +46,7 @@ const deletePost=(id)=>{
     .then(res => console.log(res))
     .catch((err)=>console.log(err))
 
-    //window.location.reload()
+    window.location.reload()
 }
 
 const updatePost=(resp)=>{
@@ -72,7 +72,7 @@ const saveUpdateForm=()=>{
         .catch((err)=> console.log(err))
 
     handleClose()
-    //window.location.reload()
+    window.location.reload()
    console.log(updateForm);
 }
 
@@ -80,7 +80,10 @@ return(
 
     <div className="MyBook">
         
-        <h1>MyBook</h1>
+        <div className='title' >
+        <h1>Welcome to MyRPBook!</h1>
+        </div> 
+        
         <button onClick={handleClick} variant="primary" type="submit">
             Add My Recipe
             </button>

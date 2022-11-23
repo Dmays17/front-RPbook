@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import Recipe from "./Recipe"
 import AddFavorites from "./AddFavorites"
-
+import '../App.css';
 
 
 function WorldBook() {
@@ -30,7 +30,15 @@ function WorldBook() {
     }
 
     return(
+        
+       
+        
+        <div>
+        <div className='titleworld' >
+        <h1>Welcome to WorldRPBook!</h1>
+        </div>
         <div className="searchBar">
+            
         <h2 className="searchTitle">Please enter a recipe below!</h2>
         <div className = "App">
             <form className = "search" onSubmit={submitForm}>
@@ -44,6 +52,7 @@ function WorldBook() {
                 <Recipe key = {recipe.recipe.label} url = {recipe.recipe.url} title={recipe.recipe.label} calories = {recipe.recipe.calories} image = {recipe.recipe.image} ingredients={recipe.recipe.ingredients} favorite = {AddFavorites} />
             ))}
             </div>
+        </div>
         </div>
         </div>
     )
